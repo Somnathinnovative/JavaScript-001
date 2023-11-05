@@ -13,4 +13,16 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 let SomeNumber = 33;
 let stringNumber = String(SomeNumber);
-console.log(stringNumber);
+/*console.log(stringNumber);
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**3);
+console.log(2/3);
+console.log(2%3);*/
+console.log("1" + 2);
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(1+2+"2");
+console.log((3+4)*5%3);// always use brakets
+console.log()
