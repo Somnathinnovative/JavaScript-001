@@ -29,3 +29,8 @@ let accountIDEmail = "hitesh@google.com";
 var accountPassword = "12345";
 accountIDEmail="hc@dhc.com";
 accountPassword=2121;
+let accountCity = "Bengaluru";
+console.log(accountID);
+console.table([accountID,accountIDEmail,accountPassword,accountCity]);
+console.log(typeof undefined);// undefined
+console.log(typeof null); // object
