@@ -14,6 +14,12 @@ console.log(gameName[2]);
 console.log(gameName[3]);
 console.log(gameName[4]);
 console.log(gameName[5]);
-
+// ------------ use console log using browser -------
+/*
+    goto browser and open inspect then select console option . where we write a 
+    const gameName = new String('hitesh');
+    console.log(gameName);
+    thatAfter we are showing many function showing in console tab 
+*/
 
 
