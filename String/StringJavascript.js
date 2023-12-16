@@ -21,5 +21,14 @@ console.log(gameName[5]);
     console.log(gameName);
     thatAfter we are showing many function showing in console tab 
 */
+ console.log(gameName.__Proto__);// it not use node Js
+ console.log(gameName.length);
+console.log(gameName.bold);// Return function 
+console.log(gameName.toUpperCase());// convert lower_case to upper_case
+
+
+
+
+
 
 
