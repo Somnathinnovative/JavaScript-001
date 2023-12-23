@@ -44,6 +44,54 @@ console.log (myArr2);
 // use some words in Array 
 const marvel_heros = ["thar", " Ironman", "Spiderman"];
 // use push and pop methods 
+marvel_heros.push("de_heros");
+console.log(marvel_heros);
+console.log(marvel_heros.push("lokenath"));
+console.log(marvel_heros);
+console.log(marvel_heros[3]);
+console.log(marvel_heros[3][1]);
+const Multi = [
+    //     0     1   2       3          for accessing element
+ /*0*/  ["Harry",12,"Male","B.com"], // [0][0]   [0][1]   [0][2]
+ /*1*/  ["Sunny",19,"Male","BCA"],   //  [1][0]    [1][1]     [1][2]
+ /*2*/  ["Search",18,"Female","BCA"],
+ /*3*/  ["Tom",17,"MAle","B.A"]
+]
+console.log(Multi[1][2]);
+const addition = marvel_heros.concat("bhootnath"); // Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+console.log(marvel_heros);
+console.log(addition);
+// Spread Operator 
+const all_new_heros= [...marvel_heros,...myArr];
+console.log(all_new_heros);
+
+const another_array = [1,2,3,[4,5,6],7,[6,7],[4,5]];
+const real_another_array = another_array.flat();
+console.log(real_another_array);
+const Arr2 = [0,1,[2,[3,[4,5]]]];
+console.log(Arr2.flat());
+console.log(Arr2.flat(Infinity));
+console.log()
+console.log(Array.isArray([1,2,3]));  // value return true or false 
+console.log(Array.isArray('[]'));
+console.log(Array.isArray(new Array(5)));
+//console.log(Array.isArray(new Int16Array[15,33]));
+const a = ["Sanjoy","Amanoy", " Rehmon"];
+var b = Array.isArray(a);// paasing the array is result given true ;
+ console.log(Array.from("Hitesh")); // Creates an array from an iterable object.
+ console.log(Array.from({name:"hitesh"})); // Return Empty Object
+ let score1 = 100;
+ let score2 = 200;
+ let score3 = 300;
+ 
+console.log(Array.of(score1,score2,score3)); // Returns a new array from a set of elements.
+
+
+
+
+
+
+
 
 
 
