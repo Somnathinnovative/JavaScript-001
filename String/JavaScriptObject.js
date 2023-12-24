@@ -72,15 +72,44 @@ console.log(obj3);
 
 const obj4 = { 1:"a", 2:"b"};
 const obj5 = { 3: "a" , 4:"b"};
-const obj6 = {5:"a" , 6:"b"};
-const obj7 = Object.assign({}, obj4,Obj5,obj6); // Copy the values of all of the enumerable own properties from one or more source objects to a target object. Returns the target object.
-console.log(obj7);
+const obj6 = { 5:"a" , 6:"b"};
+//const obj7 = Object.assign({}, obj4,Obj5,obj6); // Copy the values of all of the enumerable own properties from one or more source objects to a target object. Returns the target object.
+//console.log(obj7);
 
-//const obj8 = {...obj4, ...obj5,...obj6};
-//console.log(obj8);
+const obj8 = {...obj4, ...obj5,...obj6};
+console.log(obj8);
 
 // more object declaration 
 
+const users =[
+    {
+        id:1,               // Represent 0 
+        email:"h@gmail.com"
+    },
+    {
+            id:1,    // Reperesent 1 
+            email:"hitesh@gmail.com"
+    }
+]
+
+console.log(users[1].email);
+console.log(users[0].email);
+// Return Array for every function
+console.log(tinder);
+console.log(Object.keys(tinder)); // Return Array
+console.log(Object.values(tinder)); 
+console.log(Object.entries(tinder));
+console.log(tinder.hasOwnProperty('isLoggedIn'));
+// please print google console 
+const course = {
+    coursename : "Js in Hindi",
+    price : "999",
+    courseInstructor:"hitesh"
+}
+const{courseInstructor} = course
+console.log(courseInstructor);
+const {courseInstructor:instructor} = course
+console.log(instructor);
 
 
 
