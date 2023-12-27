@@ -26,3 +26,31 @@ const addfour = (num1,num2) => (
 )
 
 console.log(addfour(3,4).Message());
+
+// Immediatately Invoked Function Expression (IIFE)
+(function eveningChai(){
+    console.log("DB Connected");
+}) ();
+
+(function aurcode(){
+    console.log('DB CONNECTED TWO');
+})();
+
+// IIFE Arow function
+
+(()=>
+        {
+            console.log(`DB Connected Two`);
+        }) ();
+
+((name)=>
+        {
+            console.log(`DB CONNECTED TWO ${name}`);
+        }) ("hitesh");
+     //design pattern
+     const makewithdraw = (balance)=> ((copyBalance)=>
+     {
+            
+     }
+     )()
+
