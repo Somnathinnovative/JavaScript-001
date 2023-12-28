@@ -169,10 +169,88 @@ for(const key in mapping)  // output blank
 {
     console.log(key);
 } 
+
+// for each loops ==> using Array
+
 const coding = ["js","ruby","java","python","cpp"];
-coding.forEach(function(val)
+/*coding.forEach(function(val)
 {
         console.log(val);
 }
+)*/
+// using Arrow function in for each loops 
+   /* coding.forEach( (item)=>
+            {
+                console.log(item);
+            }
+    )*/
 
-)
+    function printMe(item,index,arr){
+        console.log(item);
+        console.log(index);
+        console.log(arr);
+    }
+
+    coding.forEach(printMe);
+
+    const my_cod_scripr = [
+        {
+            languageName: "Javascript",
+            languageFileName : "js"
+        },
+
+        {
+            languageName: "Javascript",
+            languageFileName : "java"
+        },
+
+        {
+            languageName: "Phython",
+            languageFileName : "Py"
+        }
+
+    ]
+
+    // this forEach loops is not return any value 
+    my_cod_scripr.forEach((item)=>
+    {
+        console.log(item.languageFileName);
+    }
+    )
+const coding_oop = ["js","ruby","java","phython","cpp"];
+
+const vales = coding_oop.forEach((item,index,Arr)=>{
+       // console.log(item,index,arr);
+        return item;
+})
+console.log(vales);
+
+// use filter 
+
+const myNums = [1,2,3,5,6,7,8,9,10];
+// const newNums = myNums.filter((num)=>num>4)
+// console.log(newNums);
+
+// const newfilter = myNums.filter((num)=>
+//     {
+//         return num>4;   
+//     }
+// )
+
+// console.log(newfilter);
+
+// using for each loops 
+const newArr = [];
+myNums.forEach((num)=>
+{
+    if(num>4)
+    {
+        newArr.push(num);
+    }
+}
+)                   /*  Same work  */
+
+console.log(newArr);
+
+
+
