@@ -74,6 +74,24 @@ console.log(myTotal)
 
 const shoppingCart = [
     {
-        itemNma
+        itemName : "js Course",
+        price : 2999
+    },
+
+    {
+        itemName:"PY Course",
+        price:999
+    },
+
+    {
+        itemName:"mobile dev course",
+        price:5999,
+    },
+    {
+        itemName:"data science course",
+        price:12999,
     }
 ]
+
+const priceTropy =shoppingCart.reduce((acc,item)=> item.price,0)
+console.log(priceTropy);
