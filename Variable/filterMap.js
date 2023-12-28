@@ -43,7 +43,37 @@ console.log(mapping);
                 }
             )
 console.log(mapping_inside);
+// use Arrow function
+// const MyArrowMap = [1,2,3,4,5,6,7,8,9,10]
+// const assignMap = MyArrowMap.map((num)=>num+10);
+// console.log(assignMap);
 
-const MyArrowMap = [1,2,3,4,5,6,7,8,9,10]
-const assignMap = MyArrowMap.map((num)=>num+10);
-console.log(assignMap);
+const MyNumbers = [1,2,3,4,5,6,7,8,9,10]
+let newNums = MyNumbers;
+ let assign =newNums.map((num)=>num*10);
+//console.log(assign);
+
+// assign = newNums.map((num)=>num+1)
+// console.log(assign);
+
+const store=assign.filter((num)=>num>40)
+console.log(store);
+
+// Reduce in javascript
+//A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
+//Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+const MyNu = [1,2,3];
+// let myTotal = MyNu.reduce(function(acc,curnval){
+//     console.log(`acc:${acc} and currval:${curnval}`);
+//     return acc+curnval;
+// },0)
+// console.log(myTotal);
+
+ const myTotal = MyNu.reduce((acc,curr)=>acc+curr,0);
+console.log(myTotal)
+
+const shoppingCart = [
+    {
+        itemNma
+    }
+]
